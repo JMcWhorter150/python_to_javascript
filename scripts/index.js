@@ -43,8 +43,8 @@ console.log(`I ate ${turkeysCooked} turkeys!`);
 
 // print(f"How many turkeys I should eat {numberOfTurkeysICanEat - turkeysCooked}")
 console.log(`Turkeys to eat: ${numberOfTurkeysICanEat - turkeysCooked}`);
-
-const petName = `Sam`;
+// debugger;
+let petName = `Sam`;
 // When do I do upper-casing in html vs css vs js?
 // petName.toUpperCase();
 // -wherever you have control
@@ -53,3 +53,48 @@ console.log(`${petName.toUpperCase()} is ${petName.length} characters long.`)
 
 // .toUpperCase is a method (i.e., a function that belongs to an object)
 // .length is a property (i.e., a variable that belongs to an object)
+
+const aboutMyPet = `${petName.toUpperCase()} is ${petName.length} characters long.`;
+console.log(aboutMyPet);
+
+petName = `SamMan`;
+console.log(aboutMyPet);
+
+// Stuff we'll do with collections:
+// Create
+const turkeyDinner = ["sausage balls", "turkey", "dressing", "pecan pie"];
+// How do I copy a list?
+
+
+// Retrieve
+// print(turkeyDinner[2])
+console.log(turkeyDinner[2])
+
+// How do I retrieve a portion? ("slice" in python)
+// How do I retrieve based on a condition?
+// How do I transform each item and put that into a new list?
+
+// Update
+// turkeyDinner[1] = "Tofurkey"
+turkeyDinner[1] = "Tofurkey";
+
+// Delete
+
+// turkeyDinner.pop(1)
+// del turkeyDinner[1]
+// delete turkeyDinner[1];
+// But! This leaves a hole!!!
+// Splice can remove an item at a particular spot
+
+// In python, we do this:
+// for item in turkeyDinner:
+//  print(f"For Turkey Day, I ate {item}")
+
+// In JavaScript
+// 1. "classic for-loop" (is the equivalent of python while loop)
+for (let count = 0; count < 10; count++) {
+    console.log(count);
+}
+// 2. "new fangled for-loop"
+
+// 3. (for tomorrow) .forEach and friends
